@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import './App.css'
 
 function App() {
-  const [bgColor, setBgColor] = useState('#023F6C')
+  const [bgColor, setBgColor] = useState('#FFFFFF')
 
   useEffect(() => {
     document.body.style.backgroundColor = bgColor
