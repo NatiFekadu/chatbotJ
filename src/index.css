@@ -5,8 +5,7 @@
 
   color-scheme: light;
   color: #213547;
-  background-color: #ffffff;
-
+  background-color: #023F6C;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -20,7 +19,7 @@ body {
   justify-content: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #ffffff;
+  background-color: #023F6C;
 }
 
 h1 {
@@ -59,18 +58,16 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #f0f2f5;
+    color: #ffffff;
+    background-color: #023F6C;
   }
 
   body {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: #023F6C;
   }
 
   h1 {
-    background: linear-gradient(to right, #2c3e50, #4ca1af);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #ffffff;
   }
 
   button {

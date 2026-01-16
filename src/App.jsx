@@ -1,8 +1,40 @@
+import { useState, useEffect } from 'react'
 import './App.css'
 
 function App() {
+  const [bgColor, setBgColor] = useState('#023F6C')
+
+  useEffect(() => {
+    document.body.style.backgroundColor = bgColor
+    document.documentElement.style.backgroundColor = bgColor
+  }, [bgColor])
+
+  const handleColorChange = (e) => {
+    setBgColor(e.target.value)
+  }
+
   return (
     <>
+      <div className="background-controls">
+        <label htmlFor="colorPicker">Background Color:</label>
+        <div className="control-group">
+          <input
+            type="color"
+            id="colorPicker"
+            value={bgColor}
+            onChange={handleColorChange}
+            className="color-input"
+          />
+          <input
+            type="text"
+            value={bgColor}
+            onChange={handleColorChange}
+            className="hex-input"
+            placeholder="#000000"
+          />
+        </div>
+      </div>
+
       <h1>Chatbot Test</h1>
       <div className="card">
         <p className="instruction-text">
