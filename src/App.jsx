@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import './App.css'
 
 function App() {
-  const [bgColor, setBgColor] = useState('#FFFFFF')
+  const [bgColor, setBgColor] = useState('#d3dade')
 
   useEffect(() => {
     document.body.style.backgroundColor = bgColor
@@ -30,7 +30,7 @@ function App() {
             value={bgColor}
             onChange={handleColorChange}
             className="hex-input"
-            placeholder="#000000"
+            placeholder="#023F6C"
           />
         </div>
       </div>
